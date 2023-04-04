@@ -1,0 +1,19 @@
+#container {
+  text-align: center;
+}
+table {
+  border-collapse: collapse;
+  font-size: 2em;
+  margin: 0 auto;
+}
+colgroup,
+tbody {
+  border: solid medium;
+}
+td {
+  border: dotted thin;
+  height: 1.4em;
+  width: 1.4em;
+  text-align: center;
+  padding: 0;
+}
