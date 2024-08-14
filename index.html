@@ -1,40 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Sudoku Generator</title>
-      <link rel="stylesheet" href="style.css" />
-   </head>
-   <body>
-      <div id="container">
-         <table id="sudoku-board">
-         </table>
-         <div>
-            <div>
-               <button id="easy" >Easy</button>
-               <button id="medium" >Medium</button>
-               <button id="hard" >Hard</button>
-               <button id="extreme" >Extreme</button>
-            </div>
-            <button id="solve">Solve</button>
-         </div>
-         <script src="script.js"></script>
-         <script>
-            displayGrid();
-            document.getElementById("easy").addEventListener("click", () => {
-               generateSudoku(55);
-            });
-            document.getElementById("medium").addEventListener("click", () => {
-               generateSudoku(45);
-            });
-            document.getElementById("hard").addEventListener("click", () => {
-               generateSudoku(35);
-            });
-            document.getElementById("extreme").addEventListener("click", () => {
-               generateSudoku(25);
-            });
-         </script>
-      </div>
-   </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sudoku</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="container">
+    <h1>Sudoku</h1>
+    <table id="sudoku-board"></table>
+    <div>
+      <button id="easy">Easy</button>
+      <button id="medium">Medium</button>
+      <button id="hard">Hard</button>
+      <button id="extreme">Extreme</button>
+    </div>
+    <div>
+      <button id="solve">Solve</button>
+      <button id="clear">Clear</button>
+      <button id="hint">Hint</button>
+<button id="clear-input">Clear Input</button>
+
+
+    </div>
+    <div id="message"></div>
+  </div>
+  <script src="script1.js"></script>
+</body>
 </html>
