@@ -1,19 +1,111 @@
+body {
+  background-color: #1b263b;
+  color: #ffffff;
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
 #container {
   text-align: center;
+  padding: 20px;
+  background-color: #1e243c;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  width: 90%;
+  max-width: 600px;
 }
+
 table {
   border-collapse: collapse;
-  font-size: 2em;
-  margin: 0 auto;
+  margin: 20px auto;
+  background-color: #2a3252;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
 }
+
 colgroup,
 tbody {
-  border: solid medium;
+  border: solid 2px #1e243c;
 }
+
+
 td {
-  border: dotted thin;
-  height: 1.5em;
-  width: 1.5em;
+  border: dotted 1px #1e243c;
+  height: 2.5em;
+  width: 2.5em;
   text-align: center;
   padding: 0;
+  cursor: pointer;
+  font-size: 1.5em;
+  color: #ffffff;
+  background-color: #2a3252;
+  transition: background-color 0.3s ease;
+  position: relative;
+}
+
+td input {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background: none;
+  border: none;
+  font-size: 1.5em;
+  color: #ffffff;
+  outline: none;
+}
+
+td.pre-filled input {
+  color: #616487;
+}
+
+td:empty:hover {
+  background-color: #4a5c7d;
+}
+
+td.incorrect {
+  background: rgb(113, 62, 89);
+  background: linear-gradient(320deg, #713e59 0%, #703e58 100%);
+  color: #ffffff;
+
+}
+
+button {
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 1em;
+  background-color: #4a5c7d;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.1s ease;
+}
+
+button:hover {
+  background-color: #5a6f8d;
+}
+
+.selected-block,
+.highlight-row,
+.highlight-col {
+  background: rgb(53, 61, 118);
+  background: linear-gradient(320deg, #363d75 0%, #363d77 100%);
+  transition: background-color 0.1s ease;
+}
+
+.selected {
+  background: #4f41f1;
+  background: linear-gradient(320deg, #5041f1 0%, #695bfd 100%);
+  padding: 0;
+  transition: background-color 0.1s ease;
+}
+
+.highlight-same-number {
+  background-color: #232b45;
 }
